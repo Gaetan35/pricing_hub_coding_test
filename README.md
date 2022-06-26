@@ -1,46 +1,23 @@
-# Getting Started with Create React App
+# Test technique Pricing Hub
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a technical test made as part of Pricing Hub's interview process.
 
-## Available Scripts
+## How to install the application
 
-In the project directory, you can run:
+- Clone the github repository
+- Run `npm install` to install the dependencies of the project
+- Go to `http://localhost:3000/` to see the result
 
-### `npm start`
+## Recommanded extensions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+When opening VSCode for the first time for this project, you should see a popup in the bottom left corner, recommending to install Eslint, Stylelint and Prettier extensions. You can accept it so that you can see Linter warnings/errors directly on VSCode while writing code, and so that Prettier can format your code as you write it. This project uses two linters, Stylelint for scss files and Eslint for the ts/tsx/js/jsx files.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+It is also recommended to go on the settings and check the option to format the code on save.
 
-### `npm test`
+## Data formatting
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The original data provided was the `data.csv` file. The script `formatData.js` was used to format that data in a way that is easier to use. The result is in the file `src/formattedData.json`
 
-### `npm run build`
+## Future improvements
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+I made a list of some improvements I would have implemented in this project if I had had more time. You can see it in the [todo.md](./todo.md) file

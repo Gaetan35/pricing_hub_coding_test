@@ -1,0 +1,5 @@
+- Use a variables.scss file to implement a design system with colors, media queries...
+- Make the design responsive for mobile users using media queries
+- Add unit tests with Jest for the dateFormatter function
+- Add UI/UX tests with React Testing Library
+- To deploy the app : Add docker and a CI pipeline
