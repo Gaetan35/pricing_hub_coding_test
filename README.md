@@ -1,4 +1,4 @@
-# Test technique Pricing Hub
+# Technical test Pricing Hub
 
 This project is a technical test made as part of Pricing Hub's interview process.
 
