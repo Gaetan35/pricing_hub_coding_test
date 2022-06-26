@@ -35,7 +35,7 @@ export const SalesChart = ({
     <div className={styles.lineChartContainer}>
       <h2 className={styles.graphTitle}>
         {selectedCategory !== undefined
-          ? selectedCategory
+          ? `Ventes de la catégorie ${selectedCategory}`
           : "Cliquez sur une catégorie pour actualiser le graphique"}
       </h2>
       <ResponsiveContainer width="95%" height={400}>

@@ -19,31 +19,27 @@ export const CategoryNode = ({
   children,
   isSelected,
   setSelectedCategory,
-}: ProductLabelProps) => {
-  return (
-    <>
-      <div className={styles.categoryNodeContainer}>
-        <button onClick={toggleIsOpen}>
-          <RoundArrowIcon
-            className={
-              isOpen ? styles.rotateRoundArrowUp : styles.rotateRoundArrowDown
-            }
-          />
-        </button>
-        <button onClick={() => setSelectedCategory(category)}>
-          <p
-            className={classNames(styles.categoryLabel, {
-              [styles.selectedCategory]: isSelected,
-            })}
-          >
-            {category}
-          </p>
-        </button>
-      </div>
+}: ProductLabelProps) => (
+  <>
+    <div className={styles.categoryNodeContainer}>
+      <button onClick={toggleIsOpen} className={styles.roundArrowButton}>
+        <RoundArrowIcon
+          className={
+            isOpen ? styles.rotateRoundArrowUp : styles.rotateRoundArrowDown
+          }
+        />
+      </button>
+      <button onClick={() => setSelectedCategory(category)}>
+        <p
+          className={classNames(styles.categoryLabel, {
+            [styles.selectedCategory]: isSelected,
+          })}
+        >
+          {category}
+        </p>
+      </button>
+    </div>
 
-      {isOpen && (
-        <div className={styles.descendantsContainer}> {children} </div>
-      )}
-    </>
-  );
-};
+    {isOpen && <div className={styles.descendantsContainer}> {children} </div>}
+  </>
+);

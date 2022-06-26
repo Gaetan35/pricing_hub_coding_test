@@ -20,20 +20,25 @@ export const Home = () => {
 
   return (
     <div className={styles.homePageContainer}>
-      <CategoriesTree
-        rootLevelCategories={rootLevelCategories}
-        descendants={descendants}
-        selectedCategory={selectedCategory}
-        setSelectedCategory={setSelectedCategory}
-      />
-      <SalesChart
-        selectedCategory={selectedCategory}
-        graphData={
-          selectedCategory !== undefined
-            ? graphByCategory[selectedCategory] ?? []
-            : []
-        }
-      />
+      <div className={styles.innerContainer}>
+        <h1 className={styles.pageTitle}>Test technique Pricing Hub</h1>
+        <div className={styles.flexRow}>
+          <CategoriesTree
+            rootLevelCategories={rootLevelCategories}
+            descendants={descendants}
+            selectedCategory={selectedCategory}
+            setSelectedCategory={setSelectedCategory}
+          />
+          <SalesChart
+            selectedCategory={selectedCategory}
+            graphData={
+              selectedCategory !== undefined
+                ? graphByCategory[selectedCategory] ?? []
+                : []
+            }
+          />
+        </div>
+      </div>
     </div>
   );
 };

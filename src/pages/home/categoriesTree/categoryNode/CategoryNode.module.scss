@@ -1,28 +1,33 @@
-$TRANSITION_DURATION: 200ms;
-
 .categoryNodeContainer {
   display: flex;
   align-items: center;
 
-  .categoryLabel {
-    margin-left: 1rem;
-    font-size: 2rem;
-    font-weight: 700;
-  }
+  .roundArrowButton {
+    display: flex;
+    align-items: center;
 
-  .selectedCategory {
-    color: #0069b4;
-  }
+    $TRANSITION_DURATION: 200ms;
 
-  .rotateRoundArrowUp {
-    transform: rotate(180deg);
-    transition-duration: $TRANSITION_DURATION;
-  }
+    .rotateRoundArrowUp {
+      transform: rotate(180deg);
+      transition-duration: $TRANSITION_DURATION;
+    }
 
-  .rotateRoundArrowDown {
-    transform: rotate(0deg);
-    transition-duration: $TRANSITION_DURATION;
+    .rotateRoundArrowDown {
+      transform: rotate(0deg);
+      transition-duration: $TRANSITION_DURATION;
+    }
   }
+}
+
+.categoryLabel {
+  margin-left: 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.selectedCategory {
+  color: #0069b4;
 }
 
 .descendantsContainer {

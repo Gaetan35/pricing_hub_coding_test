@@ -1,10 +1,31 @@
 .homePageContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 15rem;
   background-color: #f7f7f7;
   min-height: 100vh;
   max-width: 100%;
   box-sizing: border-box;
+
+  .innerContainer {
+    width: 100%;
+    padding: 4rem;
+    background-color: #fff;
+    box-shadow: 0 0.3rem 0.6rem 0 rgb(0 0 0 / 16%);
+    border-radius: 0.4rem;
+    box-sizing: border-box;
+
+    .pageTitle {
+      margin-bottom: 3rem;
+      font-size: 3.5rem;
+      text-align: center;
+    }
+
+    .flexRow {
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
