@@ -3,6 +3,7 @@ import styles from "./Home.module.scss";
 
 import formattedData from "../../formattedData.json";
 import { CategoriesTree } from "./categoriesTree/CategoriesTree";
+import { SalesChart } from "./lineChart/SalesChart";
 
 type FormattedData = {
   rootLevelCategories: string[];
@@ -24,6 +25,14 @@ export const Home = () => {
         descendants={descendants}
         selectedCategory={selectedCategory}
         setSelectedCategory={setSelectedCategory}
+      />
+      <SalesChart
+        selectedCategory={selectedCategory}
+        graphData={
+          selectedCategory !== undefined
+            ? graphByCategory[selectedCategory] ?? []
+            : []
+        }
       />
     </div>
   );
