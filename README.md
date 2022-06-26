@@ -4,6 +4,8 @@ This project is a technical test made as part of Pricing Hub's interview process
 
 ## How to install the application
 
+You need to have Node.js and npm installed to run the application
+
 - Clone the github repository
 - Run `npm install` to install the dependencies of the project
 - Go to `http://localhost:3000/` to see the result
